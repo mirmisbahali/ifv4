@@ -24,6 +24,7 @@ p {
 }
 
 
+
 /* =========================== */
 /* Blue Bold font style */
 /* =========================== */
@@ -77,6 +78,7 @@ p {
 /* =========================== */
 
 
+
 /* =========================== */
 /* Co Section Start */
 /* =========================== */
@@ -112,6 +114,7 @@ p {
 /* =========================== */
 
 
+
 /* =========================== */
 /* Bills to start */
 /* =========================== */
@@ -124,6 +127,8 @@ p {
 /* =========================== */
 /* Bills to end */
 /* =========================== */
+
+
 
 /* =========================== */
 /* Invoice items start */
@@ -158,67 +163,36 @@ p {
 /* =========================== */
 /* Bills table start */
 /* =========================== */
-/* #bill_table_section {
+#bill_table_section {
     margin: 242px 0 0 0;
 }
 
-#table {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 52px;
-}
-
-#table p {
-    padding: 5.5px 0;
-}
-
-#table ul li h1 {
-    font-size: 42px;
-    font-weight: 900;
-    border-bottom: 1px solid #2DA2C5;
-}
-
-#table ul li {
-    font-size: 45px;
-    color: #2DA2C5;
-}
-
-
-#table_left_col {
-    width: 968px;
-}
-
-#table_right_col {
-    width: 1424px;
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: right;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-#table_right_col li {
-    width: 255px;
-    margin-left: 83px;
-    margin-bottom: 100px;
-    word-wrap: break-word;
-} */
-
 table {
+    table-layout: fixed;
     width: 100%;
     text-align: right;
     color: #2DA2C5;
     
 }
-/* 
-table th td {
-    border-collapse: collapse;
-    border-spacing: 0;
-} */
 
-.left_col {
+caption {
     text-align: left;
-    width: 986px;
+}
+
+table .left_col {
+    text-align: left;
+    width: 630px;
+    border: none;
+    padding-left: 0;
+}
+
+table .border-b {
+    border-bottom: 1px solid #2DA2C5;
+}
+
+.spacer {
+    display: block;
+    padding-bottom: 100px;
 }
 
 th {
@@ -229,17 +203,20 @@ th {
 }
 
 td {
-    width: 255px;
     word-wrap: break-word;
     font-size: 49px;
 }
 
 td, th {
-    /* padding-left: 100px; */
+    width: 255px;
+    padding: 5.5px 0 5.5px 100px;
+    word-wrap: break-word;
+    
 }
 /* =========================== */
 /* Bills table End */
 /* =========================== */
+
 
 
 /* =========================== */
@@ -262,6 +239,8 @@ td, th {
 /* Total Section End */
 /* =========================== */
 
+
+
 footer {
     background: #F6F9FD;
     padding: 125px 138px 92px 138px;
@@ -273,6 +252,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 172px;
+    align-items: baseline;
 }
 
 /* =========================== */
